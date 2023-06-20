@@ -17,8 +17,9 @@ class JavaFileFilter extends FileFilter{
 	{
 		if(file.getName().endsWith(".txt")) return true;
 		if(file.getName().endsWith(".java")) return true;
+           if(file.getName().endsWith(".pdf")) return true;
                 if(file.getName().endsWith(".jpg")) return true;
-                if(file.getName().endsWith(".pdf")) return true;
+               
                 if(file.getName().endsWith(".docx")) return true;
                 if(file.getName().endsWith(".pptx")) return true;
 		if(file.isDirectory()) return true;
@@ -26,7 +27,7 @@ class JavaFileFilter extends FileFilter{
 	}
 	public String getDescription()
 	{
-		return "Java and Text file for Encryption and Dencryption";
+		return "All extensions for Encryption and Dencryption";
 	}
 }
 
